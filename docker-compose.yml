@@ -9,3 +9,4 @@ services:
         container_name: riott-web
         volumes:
             - ./:/usr/src/app
+            - /usr/src/app/node_modules
