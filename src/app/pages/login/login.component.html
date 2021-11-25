@@ -1,0 +1,16 @@
+<div id="page-auth">
+    <aside>
+        <h2>Seu time <br> em harmonia.</h2>
+        <img src="../../../assets/images/mimi-thian-vdXMSiX-n6M-unsplash.jpg" alt="imagem ilustrativa">
+    </aside>
+
+    <main class="main-content">
+        <h1>RIOTT</h1>
+        <h3>Controle as tarefas e mesada dos seus filhos para manter a casa em harmonia.</h3>
+        <div class="form">
+            <input id="email" type="text" [(ngModel)]="user.email" placeholder="E-mail">
+            <input id="password" type="password" [(ngModel)]="user.password" placeholder="Senha">
+            <button class="btn-blue" type="submit" name="action" (click)="doLogin()">Entrar</button>
+        </div>
+    </main>
+</div>
