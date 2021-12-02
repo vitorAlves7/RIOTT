@@ -1,0 +1,8 @@
+<p>
+    <mat-form-field appearance="outline" [ngClass]="classCss">
+        <mat-label>{{matLabel}}</mat-label>
+        <input matInput [id]="id" [placeholder]="placeholder" [type]="type" autocomplete="off" [formControl]="email"
+            [name]="name" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+</p>

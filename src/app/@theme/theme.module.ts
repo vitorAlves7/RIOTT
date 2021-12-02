@@ -1,24 +1,34 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
-import { WelcomeComponent } from "./components/welcome/welcome.component";
 import { ModalComponent } from "./components/modal/modal.component";
-import { InputComponent } from "./components/input/input.component";
+import { MaterialModule } from "../pages/material.module";
+import { ButtonPrimaryComponent } from './components/button-primary/button-primary.component';
+import { InputEmailComponent } from './components/input-email/input-email.component';
+import { InputPasswordComponent } from './components/input-password/input-password.component';
 
 @NgModule({
 	declarations: [
-		WelcomeComponent,
 		ModalComponent,
-		InputComponent,
+		ButtonPrimaryComponent,
+		InputEmailComponent,
+		InputPasswordComponent,
 	],
 	imports: [
 		CommonModule,
+		MaterialModule,
+		MatFormFieldModule,
+		FormsModule,
+		ReactiveFormsModule,
 	],
 	providers: [],
 	exports: [
-		WelcomeComponent,
 		ModalComponent,
-		InputComponent,
+		ButtonPrimaryComponent,
+		InputEmailComponent,
+		InputPasswordComponent,
 	]
 })
 export class ThemeModule { }

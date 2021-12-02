@@ -1,0 +1,13 @@
+button {
+    cursor: pointer;
+    width: 100%;
+    color: #FFF;
+    font-weight: 500;
+    height: 63px;
+    border-radius: 8px;
+    padding: 0 16px;
+    background: rgba(0, 109, 119, 1);
+    border: 2px solid rgba(0, 109, 119, 1);
+    
+    margin-top: 16px;
+}

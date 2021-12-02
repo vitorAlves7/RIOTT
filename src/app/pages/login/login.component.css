@@ -22,7 +22,6 @@
     left: 56px;
     top: 410px;
     
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 86px;
@@ -58,29 +57,6 @@
 #page-auth .main-content h1 {
     font-size: 56px;
     color: rgba(0, 109, 119, 1);
-}
-
-#page-auth .main-content .form input {
-    height: 63px;
-    border-radius: 8px;
-    padding: 0 16px;
-    background: #FFF;
-    border: 2px solid #a8a8b3;
-}
-
-#page-auth .main-content .form input:first-child {
-    margin-bottom: 32px;
-}
-
-#page-auth .main-content .form button {
-    color: #FFF;
-    height: 63px;
-    border-radius: 8px;
-    padding: 0 16px;
-    background: rgba(0, 109, 119, 1);
-    border: 2px solid rgba(0, 109, 119, 1);
-    
-    margin-top: 16px;
 }
 
 #page-auth .main-content .form button, #page-auth .main-content .form input {

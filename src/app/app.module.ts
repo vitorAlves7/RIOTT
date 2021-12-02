@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AuthService } from './@core/services/auth.service';
 
@@ -13,6 +15,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    CommonModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

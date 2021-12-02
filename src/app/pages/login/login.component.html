@@ -8,9 +8,18 @@
         <h1>RIOTT</h1>
         <h3>Controle as tarefas e mesada dos seus filhos para manter a casa em harmonia.</h3>
         <div class="form">
-            <input id="email" type="text" [(ngModel)]="user.email" placeholder="E-mail">
-            <input id="password" type="password" [(ngModel)]="user.password" placeholder="Senha">
-            <button class="btn-blue" type="submit" name="action" (click)="doLogin()">Entrar</button>
+            <form #loginForm="ngForm">
+                <app-input-email ngDefaultControl [matLabel]="'Email'" [id]="'email'" [placeholder]="'Email@email.com'"
+                    [type]="'email'" name="email" [(ngModel)]="user.email">
+                </app-input-email>
+                <app-input-password ngDefaultControl [matLabel]="'Senha'" [id]="'senha'" name="password"
+                    [(ngModel)]="user.password">
+                </app-input-password>
+                <app-button-primary text="Entrar" (click)="doLogin(loginForm)"></app-button-primary>
+            </form>
+            <div *ngIf="errorMessage">
+                {{errorMessage}}
+            </div>
         </div>
     </main>
 </div>
