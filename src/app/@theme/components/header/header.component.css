@@ -1,0 +1,36 @@
+mat-toolbar {
+    padding: 24px 56px;
+
+    background-color: #FFF;
+    border-bottom: 1px solid #DEE8EB;
+
+    justify-content: space-between;
+}
+
+.logo-nav {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+
+    color: #2F80ED;
+}
+
+span {
+    cursor: pointer;
+    padding: 12px;
+    
+    color: #7C8D93;
+}
+
+span:hover {
+    color: #006D77;
+}
+
+span:last-child {
+    color: #E29578;
+}
+
+span:last-child:hover {
+    color: #e07148;
+}

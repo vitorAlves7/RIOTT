@@ -3,7 +3,10 @@ import { RouterModule, Routes } from "@angular/router";
 import { PagesComponent } from "./pages.component";
 
 import { LoginComponent } from "./login/login.component";
-import { ListComponent } from "./list/list.component";
+import { HomeComponent } from "./home/home.component";
+import { HistoryComponent } from "./history/history.component";
+import { ActivitiesComponent } from "./activities/activities.component";
+import { MembersComponent } from "./members/members.component";
 
 const routes: Routes = [
 	{
@@ -21,7 +24,19 @@ const routes: Routes = [
 			},
 			{
 				path: 'list',
-				component: ListComponent,
+				component: HomeComponent,
+			},
+			{
+				path: 'history',
+				component: HistoryComponent,
+			},
+			{
+				path: 'activity',
+				component: ActivitiesComponent,
+			},
+			{
+				path: 'members',
+				component: MembersComponent,
 			},
 		],
 	},
