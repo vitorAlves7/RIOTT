@@ -15,7 +15,7 @@
                 <app-input-password ngDefaultControl [matLabel]="'Senha'" [id]="'senha'" name="password"
                     [(ngModel)]="user.password">
                 </app-input-password>
-                <app-button-primary text="Entrar" (click)="doLogin(loginForm)"></app-button-primary>
+                <app-button-primary text="Entrar" (click)="doLogin()"></app-button-primary>
             </form>
             <div *ngIf="errorMessage">
                 {{errorMessage}}
